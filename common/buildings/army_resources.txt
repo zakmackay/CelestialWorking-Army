@@ -1,0 +1,49 @@
+building_xeno_zoo = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 150
+	}
+	
+	required_resources = {
+		sr_hovor_tank = 1
+		energy = 3
+	}
+	
+	army_modifier = {
+		army_damage_mult = 0.15
+		army_health = 0.15
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_xeno_zoo"
+	}
+	
+	ai_special_building = yes
+	
+	ai_allow = {
+		has_any_resource = no
+	}
+	
+	ai_weight = {
+		factor = 1000
+		modifier = {
+			factor = 0
+			from = { sector_controlled = yes }
+		}	
+	}
+}

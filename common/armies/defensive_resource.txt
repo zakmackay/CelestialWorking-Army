@@ -1,0 +1,207 @@
+hover_tank_army_def = {
+	defensive = yes
+	damage = 2
+	morale_damage = 0.75
+	health = 2
+	morale = 1
+	time = 120
+	maintenance = 0.2
+	icon_frame = 9
+	
+	cost = {
+		minerals = 50
+		energy = 20
+	}
+	
+	prerequisites = {  "tech_defense_army" }
+
+	allow = {
+		custom_tooltip = {
+		text = force_limit_spec
+			owner = {
+				check_variable = {
+					which = "hover_tank_count" 
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit" 
+					value > 0
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = -1
+			}
+			change_variable = {
+				which = "hover_tank_count" 
+				value = -1
+			}
+		}
+	}
+
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = 1
+			}
+			change_variable = {
+				which = "hover_tank_count" 
+				value = 1
+			}
+		}
+	}
+}
+xeno_cav_army_def = {
+	defensive = yes
+	damage = 2
+	morale_damage = 1.25
+	health = 1.5
+	morale = 1.0
+	time = 120
+	maintenance = 0.17
+	icon_frame = 9
+	
+	cost = {
+		minerals = 50
+		energy = 0
+	}
+	
+	prerequisites = { "tech_gene_expressions" "tech_defense_army"  }
+
+	allow = {
+		custom_tooltip = {
+		text = force_limit_spec
+			owner = {
+				check_variable = {
+					which = "xeno_cav_count" 
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit" 
+					value > 0
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = -1
+			}
+			change_variable = {
+				which = "xeno_cav_count" 
+				value = -1
+			}
+		}
+	}
+
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = 1
+			}
+			change_variable = {
+				which = "xeno_cav_count" 
+				value = 1
+			}
+		}
+	}
+}
+
+titanic_assault_army_def = {
+	defensive = yes
+	damage = 3
+	health = 3
+	morale = 1.0
+	time = 180
+	maintenance = 0.3
+	icon_frame = 8
+	assault = yes
+	has_species = no
+
+	prerequisites = { "tech_defense_army"  }
+
+	cost = {
+		minerals = 175
+		energy = 25
+	}
+	
+	potential = {
+		custom_tooltip = {
+			text = titanic_troop_limit_tooltip
+			planet = { has_planet_flag = titanic_life_can_build }
+			owner = {
+				has_country_flag = titanic_life_soldiers
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit" 
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = titanic_troop_limit_tooltip
+			planet = { has_planet_flag = titanic_life_can_build }
+			owner = {
+				has_country_flag = titanic_life_soldiers
+				check_variable = {
+					which = "titanic_life_soldier_count" 
+					value > 0
+				}
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = 1
+			}
+			change_variable = {
+				which = "titanic_life_soldier_count" 
+				value = 1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = -1
+			}
+			change_variable = {
+				which = "titanic_life_soldier_count" 
+				value = -1
+			}
+		}
+	}
+}

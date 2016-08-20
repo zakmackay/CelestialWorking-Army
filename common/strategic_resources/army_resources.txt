@@ -1,0 +1,14 @@
+
+sr_xeno_cav = {
+	AI_category = strategic_resource
+	prerequisites = { "tech_alien_life_studies" }
+	tradable = yes
+	is_rare = yes
+}
+
+sr_hover_tank = {
+	AI_category = strategic_resource
+	prerequisites = { "tech_alien_life_studies" }
+	tradable = yes
+	is_rare = yes
+}

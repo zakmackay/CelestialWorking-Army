@@ -1,0 +1,75 @@
+# No scope, like on_game_start
+on_yearly_pulse = {
+	events = {
+		force.1
+	}
+}
+
+# Triggers when the game starts
+#on_game_start = {
+on_press_begin = {
+	events = {
+		force.1
+	}
+}
+
+on_planet_attackers_win = {
+	events = {
+		force.2
+	}
+}
+
+on_planet_attackers_lose = {
+	events = {
+		force.2
+	}
+}
+
+on_planet_defenders_win = {
+	events = {
+		force.2
+	}
+}
+
+on_planet_defenders_lose = {
+	events = {
+		force.2
+	}
+}
+
+on_uplift_completion = {
+	events = {
+		force.2
+	}
+}
+
+on_purge_complete = {
+	events = {
+		force.2
+	}
+}
+on_pop_enslaved = {
+	events = {
+		force.2
+	}
+}
+on_building_complete = {
+	events = {
+		force.2
+	}
+}
+on_building_demolished = {
+	events = {
+		force.2
+	}
+}
+on_building_replaced = {
+	events = {
+		force.2
+	}
+}
+on_pop_birth = {
+	events = {
+		force.2
+	}
+}

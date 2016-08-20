@@ -1,0 +1,104 @@
+# Possible Deposit Variables
+# modifier - weight, will replace the weight value
+# modifier - factor, will multiply the weight value
+# resources, resource and amount
+# station = station class in orbit to gather
+# if you mix resources that are not supposed to be collected by an orbital station remember to put is_orbital_slot = no
+
+d_xeno_cav_deposit = {
+	resources = {
+		food = 4
+		sr_xeno_cav = 1
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			planet = {
+				AND = {
+					OR = {
+						is_planet_class = pc_gaia
+						is_planet_class = pc_continental
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_tropical
+						is_planet_class = pc_ocean
+						is_planet_class = pc_arid
+						is_planet_class = pc_desert
+						is_planet_class = pc_tundra
+						is_planet_class = pc_arctic
+					}
+					has_owner = no
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			planet = {
+				has_planet_modifier = "pm_lush"
+			}
+		}
+		modifier = {
+			factor = 7
+			planet = {
+				has_planet_modifier = "pm_dangerous_wildlife"
+			}
+		}
+		modifier = {
+			factor = 0
+			planet = {
+				OR = {
+					has_deposit = "d_immense_mineral_deposit"
+					has_deposit = "d_immense_energy_deposit"
+					has_deposit = "d_immense_society_deposit"
+					has_deposit = "d_immense_physics_deposit"
+					has_deposit = "d_immense_engineering_deposit"
+					has_strategic_resource = yes
+				}
+			}
+		}
+	}
+}
+
+d_hover_tank = {
+	resources = { 
+		physics_research = 4
+		sr_hover_tank = 1
+	}
+	
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 3
+			planet = {
+				AND = {
+					OR = {
+						is_planet_class = pc_gaia
+						is_planet_class = pc_continental
+						is_planet_class = pc_ringworld_habitable
+						is_planet_class = pc_tropical
+						is_planet_class = pc_ocean
+						is_planet_class = pc_arid
+						is_planet_class = pc_desert
+						is_planet_class = pc_tundra
+						is_planet_class = pc_arctic
+					}
+					has_owner = no
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			planet = {
+				OR = {
+					has_deposit = "d_immense_mineral_deposit"
+					has_deposit = "d_immense_energy_deposit"
+					has_deposit = "d_immense_society_deposit"
+					has_deposit = "d_immense_physics_deposit"
+					has_deposit = "d_immense_engineering_deposit"
+					has_strategic_resource = yes
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,256 @@
+xeno_cav_psi_army = {
+	damage = 2.5
+	morale_damage = 2
+	health = 1.5
+	morale = 2
+	time = 180
+	maintenance = 0.4
+	icon_frame = 9
+	
+	cost = {
+		minerals = 150
+		energy = 50
+	}
+	
+	prerequisites = { "tech_telepathy" "tech_gene_expressions" }
+
+	allow = {
+
+		custom_tooltip = {
+		text = force_limit_spec
+			owner = {
+				check_variable = {
+					which = "xeno_cav_count" 
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit" 
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit_specs" 
+					value > 0
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = -3
+			}
+			change_variable = {
+				which = "force_limit_specs" 
+				value = -3
+			}
+			change_variable = {
+				which = "xeno_cav_count" 
+				value = -3
+			}
+		}
+	}
+
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = 3
+			}
+			change_variable = {
+				which = "force_limit_specs" 
+				value = -3
+			}
+			change_variable = {
+				which = "xeno_cav_count" 
+				value = 3
+			}
+		}
+	}
+}
+hover_tank_robo_army = {
+	damage = 2.2
+	health = 2.75
+	time = 180
+	maintenance = 0.4
+	icon_frame = 9
+	has_species = no
+	robotic = yes
+
+	cost = {
+		minerals = 200
+		energy = 50
+	}
+	
+	prerequisites = {  }
+
+	allow = {
+		custom_tooltip = {
+		text = force_limit_spec
+			owner = {
+				check_variable = {
+					which = "hover_tank_count" 
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit" 
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit_specs" 
+					value > 0
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = -3
+			}
+			change_variable = {
+				which = "force_limit_specs" 
+				value = -3
+			}
+			change_variable = {
+				which = "hover_tank_count" 
+				value = -3
+			}
+		}
+	}
+
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = 3
+			}
+			change_variable = {
+				which = "force_limit_specs" 
+				value = -3
+			}
+			change_variable = {
+				which = "hover_tank_count" 
+				value = 3
+			}
+		}
+	}
+}
+xenomorph_titanic_army = {
+	damage = 3.5
+	morale_damage = 1
+	health = 2
+	morale = 1.0
+	time = 360
+	maintenance = 0.6
+	icon_frame = 8
+	
+	cost = {
+		minerals = 130
+		energy = 30
+	}
+	potential = {
+		always = no 
+		custom_tooltip = {
+			text = titanic_troop_limit_tooltip
+			planet = { has_planet_flag = titanic_life_can_build }
+			owner = {
+				has_country_flag = titanic_life_soldiers
+			}
+		}
+	}
+	
+	prerequisites = { "tech_morphogenetic_field_mastery" }
+
+	allow = {
+		custom_tooltip = {
+			text = force_limit_spec
+			owner = {
+				check_variable = {
+					which = "force_limit_spec" 
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = titanic_troop_limit_tooltip
+			planet = { has_planet_flag = titanic_life_can_build }
+			owner = {
+				has_country_flag = titanic_life_soldiers
+				check_variable = {
+					which = "titanic_life_soldier_count" 
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit" 
+					value > 0
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = -3
+			}
+			change_variable = {
+				which = "force_limit_spec" 
+				value = -3
+			}
+			change_variable = {
+				which = "titanic_life_soldier_count" 
+				value = -3
+			}
+		}
+	}
+
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = 3
+			}
+			change_variable = {
+				which = "force_limit_spec" 
+				value = 3
+			}
+			change_variable = {
+				which = "titanic_life_soldier_count" 
+				value = 3
+			}
+		}
+	}
+}
