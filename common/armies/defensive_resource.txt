@@ -129,6 +129,71 @@ xeno_cav_army_def = {
 	}
 }
 
+foreign_army_def= {
+	damage = 1.75
+	health = 1.5
+	morale = 1.5
+	morale_damage = 1.05
+	time = 60
+	maintenance = 0.15
+	icon_frame = 6
+	has_species = no
+	
+	cost = {
+		minerals = 30
+	}
+	
+	prerequisites = { "tech_defense_army" }
+
+	allow = {
+		custom_tooltip = {
+			text = force_limit_spec
+			owner = {
+				check_variable = {
+					which = "foreign_count" 
+					value = 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit" 
+					value > 0
+				}
+			}
+		}
+	}
+	
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = -1
+			}
+			change_variable = {
+				which = "foreign_count" 
+				value = -1
+			}
+		}
+	}
+
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = 1
+			}
+			change_variable = {
+				which = "foreign_count" 
+				value = 1
+			}
+		}
+	}
+}
+
 titanic_assault_army_def = {
 	defensive = yes
 	damage = 3
@@ -150,7 +215,7 @@ titanic_assault_army_def = {
 	potential = {
 		custom_tooltip = {
 			text = titanic_troop_limit_tooltip
-			planet = { has_planet_flag = titanic_life_can_build }
+			#planet = { has_planet_flag = titanic_life_can_build }
 			owner = {
 				has_country_flag = titanic_life_soldiers
 			}

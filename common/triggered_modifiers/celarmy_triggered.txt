@@ -1,0 +1,12 @@
+triggered_telepathy = {
+	potential = {
+		always = yes
+	}
+	
+	trigger = {
+		has_technology = tech_telepathy
+	}
+	
+	army_morale_damage_mult = 0.10
+	army_damage_mult = 0.05
+}

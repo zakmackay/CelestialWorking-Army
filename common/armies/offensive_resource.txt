@@ -144,7 +144,7 @@ titanic_assault_army = {
 	potential = {
 		custom_tooltip = {
 			text = titanic_troop_limit_tooltip
-			planet = { has_planet_flag = titanic_life_can_build }
+		#	planet = { has_planet_flag = titanic_life_can_build }
 			owner = {
 				has_country_flag = titanic_life_soldiers
 			}
@@ -196,6 +196,69 @@ titanic_assault_army = {
 			change_variable = {
 				which = "titanic_life_soldier_count" 
 				value = -3
+			}
+		}
+	}
+}
+foreign_army= {
+	damage = 1.75
+	health = 1.5
+	morale = 1.5
+	morale_damage = 1.05
+	time = 90
+	maintenance = 0.3
+	icon_frame = 6
+	has_species = no
+	
+	cost = {
+		minerals = 60
+	}
+	
+	prerequisites = { "tech_gene_seed_purification" }
+
+	allow = {
+		custom_tooltip = {
+			text = force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit" 
+					value > 0
+				}
+			}
+		}
+		custom_tooltip = {
+			text = foreign_count
+			owner = {
+				check_variable = {
+					which = "foreign_count" 
+					value > 0
+				}
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = -3
+			}
+			change_variable = {
+				which = "foreign_count" 
+				value = -3
+			}
+		}
+	}
+
+	
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "force_limit" 
+				value = 3
+			}
+			change_variable = {
+				which = "foreign_count" 
+				value = 3
 			}
 		}
 	}

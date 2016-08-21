@@ -1,4 +1,4 @@
-NDefines.NGameplay.PLANET_ARMIES_LIMIT = 24
+NDefines.NGameplay.PLANET_ARMIES_LIMIT = 12
 NDefines.NArmy.REINFORCE_MAINTENANCE_FACTOR = 5
 NDefines.NArmy.BASE_HEALTH = 500 -- Base health
 NDefines.NArmy.BASE_DAMAGE_MIN = 0 -- Base min damage
