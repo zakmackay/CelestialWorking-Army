@@ -176,24 +176,16 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
-						}
-					}
-					modifier = {
-						factor = 0
-						check_variable = {
-							which = foreign_count
-							value < 1
 						}
 					}
 					modifier = {
@@ -209,14 +201,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -235,14 +225,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
@@ -309,14 +297,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -335,14 +322,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -361,14 +346,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
@@ -436,14 +419,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -462,14 +444,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -488,14 +468,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
@@ -577,14 +555,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -603,14 +580,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -629,14 +604,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
@@ -688,14 +661,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -714,14 +686,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -740,14 +710,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
@@ -792,14 +760,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -818,14 +785,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -844,14 +809,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
@@ -935,14 +898,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -961,14 +923,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -987,14 +947,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
@@ -1032,14 +990,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -1058,14 +1015,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -1084,19 +1039,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.77
 						OR = {
@@ -1159,14 +1113,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -1185,14 +1138,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -1211,19 +1162,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -1282,14 +1232,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -1308,14 +1257,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -1334,19 +1281,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -1409,14 +1355,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -1435,14 +1380,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -1461,19 +1404,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -1532,14 +1474,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -1558,14 +1499,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -1584,19 +1523,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -1659,14 +1597,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -1685,14 +1622,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -1711,19 +1646,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -1786,14 +1720,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -1812,14 +1745,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -1838,19 +1769,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -1910,14 +1840,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -1936,14 +1865,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -1962,19 +1889,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -2044,14 +1970,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -2070,14 +1995,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -2096,19 +2019,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -2179,14 +2101,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -2205,14 +2126,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -2231,19 +2150,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -2314,14 +2232,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -2340,14 +2257,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -2366,19 +2281,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -2441,14 +2355,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -2467,14 +2380,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -2493,19 +2404,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -2583,14 +2493,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -2609,14 +2518,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -2635,19 +2542,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -2718,14 +2624,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -2744,14 +2649,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -2770,19 +2673,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -2853,14 +2755,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -2879,14 +2780,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -2905,19 +2804,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -2982,14 +2880,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -3008,14 +2905,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -3034,19 +2929,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -3096,14 +2990,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -3122,14 +3015,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -3148,19 +3039,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -3210,14 +3100,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -3236,14 +3125,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -3262,19 +3149,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes
@@ -3324,14 +3210,13 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
+									
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 6
@@ -3350,14 +3235,12 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}	
 							count > 12
@@ -3376,19 +3259,18 @@ default = {
 									army_type = "psionic_army"
 									army_type = "xenomorph_army"
 									army_type = "gene_warrior_army"
-									army_type = "elite_guard_army"
 									army_type = "xeno_cav_psi_army"
 									army_type = "hover_tank_robo_army"
-									army_type = "xenomorph_titanic_army"
 									army_type = "hover_tank_army"
 									army_type = "xeno_cav_army"
 									army_type = "foreign_army"
-									army_type = "titanic_assault"
+									army_type = "titanic_assault_army"
 								}
 							}
 							count > 24
 						}
 					}
+
 					modifier = {
 						factor = 0.3
 						always = yes

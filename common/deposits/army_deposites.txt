@@ -10,7 +10,10 @@ d_xeno_cav_deposit = {
 		food = 4
 		sr_xeno_cav = 1
 	}
-	
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 0
+	}
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -33,13 +36,13 @@ d_xeno_cav_deposit = {
 			}
 		}
 		modifier = {
-			factor = 2
+			factor = 5
 			planet = {
 				has_planet_modifier = "pm_lush"
 			}
 		}
 		modifier = {
-			factor = 7
+			factor = 10
 			planet = {
 				has_planet_modifier = "pm_dangerous_wildlife"
 			}
@@ -57,6 +60,12 @@ d_xeno_cav_deposit = {
 				}
 			}
 		}
+		modifier = {
+			factor = 0.5
+			planet = {
+				NOT = { is_in_cluster = resource_cluster_6 }
+			}
+		}
 	}
 }
 
@@ -65,7 +74,11 @@ d_hover_tank = {
 		physics_research = 4
 		sr_hover_tank = 1
 	}
-	
+	station = shipclass_research_station
+	orbital_weight = {
+		weight = 0
+	}
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -88,6 +101,18 @@ d_hover_tank = {
 			}
 		}
 		modifier = {
+			factor = 5
+			planet = {
+				has_planet_modifier = "pm_mineral_rich"
+			}
+		}
+		modifier = {
+			factor = 10
+			planet = {
+				has_planet_modifier = "pm_ultra_rich"
+			}
+		}
+		modifier = {
 			factor = 0
 			planet = {
 				OR = {
@@ -98,6 +123,12 @@ d_hover_tank = {
 					has_deposit = "d_immense_engineering_deposit"
 					has_strategic_resource = yes
 				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			planet = {
+				NOT = { is_in_cluster = resource_cluster_7 }
 			}
 		}
 	}

@@ -13,7 +13,7 @@ hover_tank_army_def = {
 		energy = 20
 	}
 	
-	prerequisites = {  "tech_defense_army" }
+	prerequisites = { "tech_hover_tank" "tech_defense_army" }
 
 	allow = {
 		custom_tooltip = {
@@ -78,7 +78,7 @@ xeno_cav_army_def = {
 		energy = 0
 	}
 	
-	prerequisites = { "tech_gene_expressions" "tech_defense_army"  }
+	prerequisites = { "tech_alien_life_studies" "tech_defense_army"  }
 
 	allow = {
 		custom_tooltip = {
@@ -143,7 +143,7 @@ foreign_army_def= {
 		minerals = 30
 	}
 	
-	prerequisites = { "tech_defense_army" }
+	prerequisites = { "tech_defense_army" "tech_xeno_integration" }
 
 	allow = {
 		custom_tooltip = {

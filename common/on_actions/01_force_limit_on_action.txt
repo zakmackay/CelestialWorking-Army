@@ -12,64 +12,111 @@ on_press_begin = {
 		force.1
 	}
 }
-
+# Triggers country_event for the attacker upon victory
+# This = country, leader attacker
+# From = country, planet owner
+# FromFrom = planet
 on_planet_attackers_win = {
 	events = {
 		force.2
 	}
 }
 
+# Triggers country_event for the attacker upon defeat
+# This = country, attack leader
+# From = country, planet owner
+# FromFrom = planet
 on_planet_attackers_lose = {
 	events = {
 		force.2
 	}
 }
 
+# Triggers country_event for the defender upon victory
+# This = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
 on_planet_defenders_win = {
 	events = {
 		force.2
 	}
 }
 
+# Triggers country_event for the defender upon defeat
+# This = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
 on_planet_defenders_lose = {
 	events = {
 		force.2
 	}
 }
 
+# Triggers when a Special Project to uplift a pre-sentient species is completed
+# Scope = planet_event
+# This = planet scope
+# From = uplifted species
 on_uplift_completion = {
 	events = {
-		force.2
+		force.3
+	}
+}
+# This = Planet scope
+# From = Country
+on_purge_complete = {
+	events = {
+		force.4
 	}
 }
 
-on_purge_complete = {
-	events = {
-		force.2
-	}
-}
+# Pop is enslaved
+# This = Pop scope
+# owner_species = { (species)
+# owner = { owner_species = { (empire main species)
+# owner = { (empire)
 on_pop_enslaved = {
 	events = {
-		force.2
+		force.3
 	}
 }
+
+#A building construction has been completed.
+# This = Planet
+# From = Tile
 on_building_complete = {
 	events = {
-		force.2
+		force.3
 	}
 }
+# A building construction has demolished.
+# This = Planet
+# From = Tile
 on_building_demolished = {
 	events = {
-		force.2
+		force.3
 	}
 }
+# A building construction has finished, replacing another building.
+# This = Planet
+# From = Tile
 on_building_replaced = {
 	events = {
-		force.2
+		force.3
 	}
 }
+# A pop has finished migrating to another planet
+# Root = pop
+# From = Tile on the new planet
+# FromFrom = Tile on the old planet
+on_pop_migration_end = {
+	events = {
+		force.4
+	}
+}
+# A pop has been born
+# This = pop
 on_pop_birth = {
 	events = {
-		force.2
+		force.3
 	}
 }

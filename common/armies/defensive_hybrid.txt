@@ -13,7 +13,7 @@ xeno_cav_psi_army_def = {
 		energy = 25
 	}
 	
-	prerequisites = { "tech_telepathy" "tech_defense_army" "tech_gene_expressions" }
+	prerequisites = { "tech_telepathy" "tech_defense_army" "tech_alien_life_studies"}
 
 	allow = {
 		custom_tooltip = {
@@ -95,7 +95,7 @@ hover_tank_robo_army_def = {
 		energy = 50
 	}
 	
-	prerequisites = {  "tech_defense_army" }
+	prerequisites = { "tech_hover_tank" "tech_synthetic_workers" "tech_defense_army" }
 
 	allow = {
 		custom_tooltip = {

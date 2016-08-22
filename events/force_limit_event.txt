@@ -6,7 +6,7 @@ event = {
 	is_triggered_only = yes
 	immediate = {
 		every_country = {
-			country_event = { id = force.3}
+			country_event = { id = force.1000}
 		}
 	}
 }
@@ -15,12 +15,41 @@ event = {
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
-		country_event = { id = force.3}
+		from = {
+			country_event = { id = force.1000}
+		}
+		this = {
+			country_event = { id = force.1000}
+		}
 	}
 }
 
 event = {
 	id = force.3
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		this = {
+			owner = {
+				country_event = { id = force.1000}
+			}
+		}
+	}
+}
+event = {
+	id = force.4
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		from = {
+			country_event = { id = force.1000}
+		}
+	}
+}
+
+
+country_event = {
+	id = force.1000
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
@@ -62,9 +91,14 @@ event = {
 				has_migration_access = root
 			}
 			root = {
-				change_variable = {
-					which = "foreign_count" 
-					value = 6
+				if ={
+					limit = {
+						has_technology = "tech_xeno_integration"
+					}
+					change_variable = {
+						which = "foreign_count" 
+						value = 6
+					}
 				}
 			}
 		}
@@ -99,9 +133,14 @@ event = {
 		every_owned_planet = {
 			limit = { has_strategic_resource = "sr_xeno_cav"  } #rewrite for next update
 			root = {
-				change_variable = {
-					which = "xeno_cav_count" 
-					value = 6
+				if ={
+					limit = {
+						has_technology = "tech_alien_life_studies"
+					}
+					change_variable = {
+						which = "xeno_cav_count" 
+						value = 6
+					}
 				}
 			}
 		}
@@ -137,9 +176,14 @@ event = {
 		every_owned_planet = {
 			limit = { has_strategic_resource = "sr_hover_tank"  }
 			root = {
-				change_variable = {
-					which = "hover_tank_count" 
-					value = 6
+				if = {
+					limit = {
+						has_technology = "tech_hover_tank"
+					}
+					change_variable = {
+						which = "hover_tank_count" 
+						value = 6
+					}
 				}
 			}
 		}

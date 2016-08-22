@@ -12,7 +12,7 @@ hover_tank_army = {
 		energy = 40
 	}
 	
-	prerequisites = {  }
+	prerequisites = { "tech_hover_tank" }
 
 	allow = {
 		custom_tooltip = {
@@ -76,7 +76,7 @@ xeno_cav_army = {
 		energy = 0
 	}
 	
-	prerequisites = { "tech_gene_expressions" }
+	prerequisites = { "tech_alien_life_studies" }
 
 	allow = {
 		custom_tooltip = {
@@ -214,7 +214,7 @@ foreign_army= {
 		minerals = 60
 	}
 	
-	prerequisites = { "tech_gene_seed_purification" }
+	prerequisites = { "tech_xeno_integration" }
 
 	allow = {
 		custom_tooltip = {

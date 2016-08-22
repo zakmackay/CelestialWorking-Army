@@ -22,3 +22,28 @@ triggered_commissar = {
 	
 	army_morale = 0.10
 }
+
+triggered_gene_expression= {
+	potential = {
+		always = yes
+	}
+	
+	trigger = {
+		has_technology = tech_gene_expressions
+	}
+	
+	army_health = 0.10
+	army_damage_mult = 0.05
+}
+
+triggered_gene_bank = {
+	potential = {
+		always = yes
+	}
+	
+	trigger = {
+		has_technology = tech_will_to_power
+	}
+	
+	army_damage_mult = 0.15
+}
