@@ -10,3 +10,15 @@ triggered_telepathy = {
 	army_morale_damage_mult = 0.10
 	army_damage_mult = 0.05
 }
+
+triggered_commissar = {
+	potential = {
+		always = yes
+	}
+	
+	trigger = {
+		has_technology = tech_will_to_power
+	}
+	
+	army_morale = 0.10
+}

@@ -6,49 +6,61 @@ event = {
 	is_triggered_only = yes
 	immediate = {
 		every_country = {
-			country_event = { id = force.2}
+			country_event = { id = force.3}
 		}
 	}
 }
-
 event = {
 	id = force.2
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = {
+		country_event = { id = force.3}
+	}
+}
+
+event = {
+	id = force.3
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
 	####set to 0
-		set_variable = {
-			which = "force_limit" 
-			value = 15
-		}
-		set_variable = {
-			which = "force_limit_spec" 
-			value = 0
-		}
-		set_variable = {
-			which = "force_limit_slave" 
-			value = 0
-		}
-		set_variable = {
-			which = "titanic_life_soldier_count" 
-			value = 0
-		}
-		set_variable = {
-			which = "xeno_cav_count" 
-			value = 0
-		}
-		set_variable = {
-			which = "hovor_tank_count" 
-			value = 0
-		}
-		set_variable = {
-			which = "foreign_count" 
-			value = 0
+		root = {
+			set_variable = {
+				which = "force_limit" 
+				value = 15
+			}
+			set_variable = {
+				which = "force_limit_spec" 
+				value = 0
+			}
+			set_variable = {
+				which = "force_limit_slave" 
+				value = 0
+			}
+			set_variable = {
+				which = "titanic_life_soldier_count" 
+				value = 0
+			}
+			set_variable = {
+				which = "xeno_cav_count" 
+				value = 0
+			}
+			set_variable = {
+				which = "hover_tank_count" 
+				value = 0
+			}
+			set_variable = {
+				which = "foreign_count" 
+				value = 0
+			}
 		}
 
 	### foreign
 		every_country  = {
-			limit = { has_migration_access = ROOT   }
+			limit = {
+				has_migration_access = root
+			}
 			root = {
 				change_variable = {
 					which = "foreign_count" 
@@ -126,7 +138,7 @@ event = {
 			limit = { has_strategic_resource = "sr_hover_tank"  }
 			root = {
 				change_variable = {
-					which = "hovor_tank_count" 
+					which = "hover_tank_count" 
 					value = 6
 				}
 			}
@@ -134,7 +146,7 @@ event = {
 		every_army_within_country = {
 			limit = {
 				OR = {
-					army_type = "hovor_tank_army"
+					army_type = "hover_tank_army"
 					army_type = "hover_tank_robo_army"
 				}
 			}
@@ -197,7 +209,6 @@ event = {
 					army_type = "gene_warrior_army"
 					army_type = "xeno_cav_psi_army"
 					army_type = "hover_tank_robo_army"
-					army_type = "xenomorph_titanic_army"
 				}
 			}
 			root = {
@@ -216,7 +227,6 @@ event = {
 					army_type = "gene_warrior_army_def"
 					army_type = "xeno_cav_psi_army_def"
 					army_type = "hover_tank_robo_army_def"
-					army_type = "xenomorph_titanic_army_def"
 				}
 			}
 			root = {
@@ -278,14 +288,19 @@ event = {
 					army_type = "assault_army" 
 					army_type = "clone_army"
 					army_type = "robotic_army"
+
 					army_type = "android_army"
 					army_type = "psionic_army"
 					army_type = "xenomorph_army"
 					army_type = "gene_warrior_army"
-					army_type = "elite_guard_army"
+
 					army_type = "xeno_cav_psi_army"
 					army_type = "hover_tank_robo_army"
-					army_type = "xenomorph_titanic_army"
+
+					army_type = "hover_tank_army"
+					army_type = "xeno_cav_army"
+					army_type = "foreign_army"
+					army_type = "titanic_assault_army"
 				}
 			}
 			root = {
@@ -301,14 +316,19 @@ event = {
 					army_type = "defense_army" 
 					army_type = "clone_army_def"
 					army_type = "robotic_army_def"
+
 					army_type = "android_army_def"
 					army_type = "psionic_army_def"
 					army_type = "xenomorph_army_def"
 					army_type = "gene_warrior_army_def"
-					army_type = "elite_guard_army_def"
+
 					army_type = "xeno_cav_psi_army_def"
 					army_type = "hover_tank_robo_army_def"
-					army_type = "xenomorph_titanic_army_def"
+
+					army_type = "hover_tank_army_def"
+					army_type = "xeno_cav_army_def"
+					army_type = "foreign_army_def"
+					army_type = "titanic_assault_army_def"
 				}
 			}
 			root = {
@@ -320,7 +340,7 @@ event = {
 		}
 		#### Slave
 		every_owned_planet = {
-			limit = { has_building = "building_slave_processing" }
+			#limit = { has_building = "building_slave_processing" }
 			every_owned_pop = {
 				limit = { is_enslaved = yes }
 				root = {
