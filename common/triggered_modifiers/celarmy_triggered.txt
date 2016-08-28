@@ -23,7 +23,7 @@ triggered_commissar = {
 	army_morale = 0.10
 }
 
-triggered_gene_expression= {
+triggered_gene_expression = {
 	potential = {
 		always = yes
 	}
@@ -46,4 +46,17 @@ triggered_gene_bank = {
 	}
 	
 	army_damage_mult = 0.15
+}
+
+triggered_ai_advantage = {
+	potential = {
+		always = yes
+	}
+	
+	trigger = {
+		is_ai = yes
+	}
+	
+	army_upkeep_mult = -0.20
+	planet_army_build_cost_mult = -0.50
 }

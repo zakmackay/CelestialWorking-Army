@@ -1,5 +1,5 @@
 # Grand Mausoleum
-building_grand_mausoleum = {
+building_ruler_library = {
 	base_buildtime = 1000
 	built_for_ruler = yes
 	planet_unique = yes

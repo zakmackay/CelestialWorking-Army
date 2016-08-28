@@ -1,0 +1,12 @@
+trait_army_synth = {
+	cost = 0
+	
+	initial = no
+	modification = no
+	affected_by_radiation = no
+	
+	modifier = {
+		army_damage_mult = 0.25
+		army_health = 0.15
+	}
+}

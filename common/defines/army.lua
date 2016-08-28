@@ -14,10 +14,7 @@ NDefines.NGameplay.PLANET_FORTIFICATION_DEFENSE_MIN	= 1		-- At 0% fortification,
 NDefines.NGameplay.PLANET_FORTIFICATION_REPAIR 		= 0.01		-- Each day
 NDefines.NGameplay.PLANET_FORTIFICATION_REPAIR_DELAY 	= 60	-- Days since being bombarded before repairs to fortifications start
 
-NDefines.NGameplay.WAR_SCORE_BLOCKADE_MUL = 0.05	
-NDefines.NGameplay.WAR_SCORE_PLANET_BASE = 10.0		-- Relative warscore value of a planet
-NDefines.NGameplay.WAR_SCORE_PLANET_BUILDING = 5.0		-- Relative warscore value of a planet for every building
-
+NDefines.NGameplay.WAR_SCORE_BLOCKADE_MUL = 0.10
 
 NDefines.ARMY_BUDGET_FRACTION = 0.05   			-- AI will spend this fraction of their income on armies
 NDefines.MINERAL_ARMY_BUDGET_FRACTION = 0.05	-- AI will spend this fraction on armies

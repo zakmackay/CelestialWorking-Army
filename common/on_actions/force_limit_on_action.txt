@@ -69,54 +69,19 @@ on_purge_complete = {
 	}
 }
 
-# Pop is enslaved
-# This = Pop scope
-# owner_species = { (species)
-# owner = { owner_species = { (empire main species)
-# owner = { (empire)
-on_pop_enslaved = {
-	events = {
-		force.3
-	}
-}
-
-#A building construction has been completed.
-# This = Planet
-# From = Tile
-on_building_complete = {
-	events = {
-		force.3
-	}
-}
-# A building construction has demolished.
-# This = Planet
-# From = Tile
-on_building_demolished = {
-	events = {
-		force.3
-	}
-}
-# A building construction has finished, replacing another building.
-# This = Planet
-# From = Tile
-on_building_replaced = {
-	events = {
-		force.3
-	}
-}
 # A pop has finished migrating to another planet
 # Root = pop
 # From = Tile on the new planet
 # FromFrom = Tile on the old planet
 on_pop_migration_end = {
 	events = {
-		force.4
+		force.5
 	}
 }
 # A pop has been born
 # This = pop
 on_pop_birth = {
 	events = {
-		force.3
+		force.6
 	}
 }

@@ -1,4 +1,4 @@
-name="Celestial workings"
+name="Celestial workings - Army"
 path="mod/celarmy"
 tags={
 	"Balance"
@@ -6,4 +6,5 @@ tags={
 	"Military"
 	"Overhaul"
 }
+picture = "celestialworkings-armies-icon.jpg"
 supported_version="1.2.5"
