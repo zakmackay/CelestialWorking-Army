@@ -53,7 +53,9 @@ event = {
 	immediate = {
 		from = {
 			planet = {
+				owner = {
 				country_event = { id = force.1000}
+				}
 			}
 		}
 	}
