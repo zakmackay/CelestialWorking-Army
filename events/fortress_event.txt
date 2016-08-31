@@ -1,0 +1,292 @@
+namespace = fort
+
+event = {
+	id = fort.0
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = {
+			country_event = { id = fort.100}
+		}
+	}
+}
+
+event = {
+	id = fort.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		owner = {
+			country_event = { id = fort.100}
+		}
+	}
+}
+
+event = {
+	id = fort.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		root = {
+			country_event = { id = fort.100}
+		}
+		from = {
+			country_event = { id = fort.100}
+		}
+	}
+}
+
+event = {
+	id = fort.100
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_planet = {
+			remove_planet_flag = celarmy_fort
+		}
+		if = {
+			limit = { has_policy_flag = all_fort}
+			every_owned_planet = {
+				set_planet_flag = celarmy_fort
+			}
+		}
+		if = {
+			limit = { has_policy_flag = sector_fort}
+			every_owned_planet = {
+				limit = { sector_controlled = yes }
+				set_planet_flag = celarmy_fort
+			}
+		}
+		if = {
+			limit = { has_policy_flag = border_fort}
+			every_owned_planet = {
+				limit = {
+					solar_system = {
+						any_neighbor_system = {
+							any_planet = {
+								not = {
+									is_inside_border = ROOT
+								}
+							}
+						}
+					}
+				}
+				set_planet_flag = celarmy_fort
+			}
+		}
+		country_event = { id = force.1000 days = 5}
+	}
+}
+
+planet_event = {
+	id = fort.9
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_country = {
+			every_owned_planet = {
+				planet_event = { id = fort.10 }
+				planet_event = { id = fort.11 }
+				planet_event = { id = fort.12 }
+				planet_event = { id = fort.13 }
+			}
+		}
+	}
+}
+
+
+planet_event = {
+	id = fort.10
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		not = {
+			or = {
+				has_building = "building_fort_1"
+				has_building = "building_fort_2"
+				has_building = "building_fort_3"
+			}
+		}
+	}
+	immediate = {
+		this = {
+			every_planet_army = {
+				limit = {
+					army_type = "fort_1_army"
+					army_type = "fort_2_army"
+					army_type = "fort_3_army"
+				}
+			remove_army = yes
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = fort.11
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_building = "building_fort_1"
+		is_occupied_flag = no
+	}
+	immediate = {
+		this = {
+			every_planet_army = {
+				limit = {
+					army_type = "fort_2_army"
+					army_type = "fort_3_army"
+				}
+			remove_army = yes
+			}
+			if = {
+				limit = {
+					count_armies = {
+						limit = {
+							army_type = "fort_1_army"
+						}
+						count < 1			
+					}
+				}
+				create_army = {
+    					name = "Fort"
+						owner = owner
+    					type = "fort_1_army"
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = fort.12
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_building = "building_fort_2"
+		is_occupied_flag = no
+	}
+	immediate = {
+		this = {
+			every_planet_army = {
+				limit = {
+					army_type = "fort_1_army"
+					army_type = "fort_3_army"
+				}
+			remove_army = yes
+			}
+			if = {
+				limit = {
+					count_armies = {
+						limit = {
+							army_type = "fort_2_army"
+						}
+						count < 1			
+					}
+				}
+				create_army = {
+    					name = "Fort"
+    					type = "fort_2_army"
+						owner = owner
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = fort.13
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_building = "building_fort_3"
+		is_occupied_flag = no
+	}
+	immediate = {
+		this = {
+			every_planet_army = {
+				limit = {
+					army_type = "fort_1_army"
+					army_type = "fort_2_army"
+				}
+			remove_army = yes
+			}
+			if = {
+				limit = {
+					count_armies = {
+						limit = {
+							army_type = "fort_3_army"
+						}
+						count < 1			
+					}
+				}
+				create_army = {
+    					name = "Fort"
+    					type = "fort_3_army"
+						owner = owner
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fort.14
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_planet = {
+			every_tile = {
+				limit = {
+					or = {
+						has_building = "building_fort_1"
+						has_building = "building_fort_2"
+						has_building = "building_fort_3"
+					}
+				}
+				remove_building = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fort.15
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		every_owned_planet = {
+			limit = {
+				or = {
+					has_building = "building_fort_1"
+					has_building = "building_fort_2"
+					has_building = "building_fort_3"
+				}
+				not = {
+					or = {
+						has_planet_flag = celarmy_fort
+						has_planet_flag = man_celarmy_fort
+					}
+				}
+			}
+			every_tile = { 
+				limit = {
+					or = {
+						has_building = "building_fort_1"
+						has_building = "building_fort_2"
+						has_building = "building_fort_3"
+					}
+				}
+				remove_building = yes
+			}
+			every_planet_army = {
+				limit = {
+					army_type = "fort_1_army"
+					army_type = "fort_2_army"
+					army_type = "fort_2_army"
+				}
+			remove_army = yes
+			}
+		}
+	}
+}

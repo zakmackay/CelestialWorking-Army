@@ -28,7 +28,7 @@ assault_army = {
 		owner = {
 			change_variable = {
 				which = "force_limit" 
-				value = -3
+				value = -4
 			}
 		}
 	}
@@ -37,7 +37,7 @@ assault_army = {
 		owner = {
 			change_variable = {
 				which = "force_limit" 
-				value = 3
+				value = 4
 			}
 		}
 	}
@@ -77,7 +77,7 @@ slave_army = {
 		owner = {
 			change_variable = {
 				which = "force_limit" 
-				value = -3
+				value = -4
 			}
 		}
 	}
@@ -87,7 +87,7 @@ slave_army = {
 		owner = {
 			change_variable = {
 				which = "force_limit" 
-				value = 3
+				value = 4
 			}
 		}
 	}
@@ -129,7 +129,7 @@ clone_army = {
 		owner = {
 			change_variable = {
 				which = "force_limit" 
-				value = -3
+				value = -4
 			}
 		}
 	}
@@ -139,7 +139,7 @@ clone_army = {
 		owner = {
 			change_variable = {
 				which = "force_limit" 
-				value = 3
+				value = 4
 			}
 		}
 	}
@@ -180,7 +180,7 @@ robotic_army = {
 		owner = {
 			change_variable = {
 				which = "force_limit" 
-				value = -3
+				value = -4
 			}
 		}
 	}
@@ -190,7 +190,7 @@ robotic_army = {
 		owner = {
 			change_variable = {
 				which = "force_limit" 
-				value = 3
+				value = 4
 			}
 		}
 	}

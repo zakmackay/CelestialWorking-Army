@@ -1,0 +1,32 @@
+planet_edict = {
+	name = "manually_fortify"
+	influence_cost = 25
+	length = 0
+	potential = { 
+		NOT = { has_planet_flag = man_celarmy_fort}
+	}
+
+	effect = { 
+		hidden_effect = {
+			set_planet_flag = man_celarmy_fort
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = "stop_manually_fortify"
+	influence_cost = 0
+	length = 0
+	potential = { has_planet_flag = man_celarmy_fort }
+
+	effect = { 
+		remove_planet_flag = man_celarmy_fort
+	}
+	ai_weight = {
+		weight = 1000
+	}
+}

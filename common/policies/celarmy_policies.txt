@@ -1,0 +1,273 @@
+##########################################################################
+# Empire Policies
+# 
+# #####
+#
+# AI:
+# Base AI-weight is 100, if unchanged
+# AI will grab whatever policy-option has the highest weight
+#
+# #####
+# 
+##########################################################################
+
+fortification = {
+
+	potential = {
+		always = yes #
+	}
+	
+	allow = {
+		is_at_war = no # Not allowed to change policies in this group while at war
+	}
+	
+	option = {
+		name = "no_fortifications"
+		
+		policy_flags = {
+			no_fort
+		}
+		
+		valid = {
+			NOT = {
+				has_ethic = "ethic_fanatic_militarist"
+			}
+		}	
+		
+		AI_weight = {
+			modifier = {
+				factor = 10
+				OR = {
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}			
+		}
+	}
+	
+	option = {
+		name = "border_fortification"
+		
+		policy_flags = {
+			border_fort
+		}
+		AI_weight = {
+			modifier = {
+				factor = 5
+				always = yes # to do
+			}
+		}			
+	}
+
+	option = {
+		name = "sector_fortification"
+		
+		policy_flags = {
+			sector_fort
+		}
+		AI_weight = {
+			modifier = {
+				factor = 10
+				has_ethic = "ethic_militarist"
+			}
+		}			
+	}		
+	
+	option = {
+		name = "all_worlds"
+		
+		policy_flags = {
+			all_fort
+		}				
+		
+		AI_weight = {
+			modifier = {
+				factor = 10
+				has_ethic = "ethic_fanatic_militarist"
+			}
+		}		
+	}
+}
+
+Slave_integration = {
+	potential = {
+		always = yes 
+	}
+
+	option = {
+		name = "no_slave_army"
+		
+		policy_flags = {
+			no_slave_army
+		}
+		
+		valid = {
+			always = yes
+		}	
+		
+		AI_weight = {
+			modifier = {
+				factor = 100
+				not = {
+					has_ai_personality_behaviour = slaver
+				}
+			}
+		
+		}
+	}
+	
+	option = {
+		name = "low_slave_army"
+		
+		policy_flags = {
+			low_slave_army
+		}
+		valid = {
+			or = {
+				has_policy_flag = slavery_allowed_xenos_only
+				has_policy_flag = slavery_allowed_regulated_xenos_only
+				has_policy_flag = slavery_allowed_regulated
+				has_policy_flag = slavery_allowed_all
+			}
+		}
+		modifier = {
+			army_upkeep_mult = -0.10
+			army_morale = -0.5
+		}
+		AI_weight = {
+			modifier = {
+				factor = 2
+				always = yes
+			}
+		}			
+	}
+
+	option = {
+		name = "med_slave_army"
+		
+		policy_flags = {
+			med_slave_army
+		}
+		valid = {
+			or = {
+				has_policy_flag = slavery_allowed_xenos_only
+				has_policy_flag = slavery_allowed_regulated_xenos_only
+				has_policy_flag = slavery_allowed_regulated
+				has_policy_flag = slavery_allowed_all
+			}
+		}
+		modifier = {
+			army_upkeep_mult = -0.20
+			army_morale = -0.15
+		}
+		AI_weight = {
+			modifier = {
+				factor = 5
+				or = {
+					has_ethic = ethic_fanatic_collectivist
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}			
+	}		
+	
+	option = {
+		name = "high_slave_army"
+		
+		policy_flags = {
+			high_slave_army
+		}				
+		valid = {
+			or = {
+				has_policy_flag = slavery_allowed_xenos_only
+				has_policy_flag = slavery_allowed_all
+			}
+		}
+		modifier = {
+			army_upkeep_mult = -0.30
+			army_morale = -0.45
+		}
+		#AI advantage means they dont need this extra upkeep benefit. If they did they could get close to 100% reduction which would break the game.	
+	}
+}
+
+clone_integration = {
+	potential = {
+		always = yes 
+	}
+
+	option = {
+		name = "no_clone_army"
+		
+		policy_flags = {
+			no_clone_army
+		}
+		
+		valid = {
+			always = yes
+		}	
+		
+		AI_weight = {
+			modifier = {
+				factor = 100
+				not = {
+					has_ai_personality_behaviour = slaver
+				}
+			}
+		
+		}
+	}
+	
+	option = {
+		name = "low_clone_army"
+		
+		policy_flags = {
+			low_clone_army
+		}
+		modifier = {
+			army_upkeep_mult = -0.10
+			army_morale = -0.5
+		}
+		AI_weight = {
+			modifier = {
+				factor = 2
+				always = yes
+			}
+		}			
+	}
+
+	option = {
+		name = "med_clone_army"
+		
+		policy_flags = {
+			med_clone_army
+		}
+		modifier = {
+			army_upkeep_mult = -0.20
+			army_morale = -0.15
+		}
+		AI_weight = {
+			modifier = {
+				factor = 5
+				or = {
+					has_ethic = ethic_fanatic_collectivist
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}			
+	}		
+	
+	option = {
+		name = "high_clone_army"
+		
+		policy_flags = {
+			high_clone_army
+		}				
+		modifier = {
+			army_upkeep_mult = -0.30
+			army_morale = -0.45
+		}
+		#AI advantage means they dont need this extra upkeep benefit. If they did they could get close to 100% reduction which would break the game.	
+	}
+}

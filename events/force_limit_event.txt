@@ -72,6 +72,20 @@ event = {
 	}
 }
 
+event = {
+	id = force.7
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		root = {
+			country_event = { id = force.1000}
+		}
+		from = {
+			country_event = { id = force.1000}
+		}
+	}
+}
+
 country_event = {
 	id = force.1000
 	hide_window = yes
@@ -127,6 +141,13 @@ country_event = {
 					which = "force_limit" 
 					value = 1
 				}
+				if = {
+					limit = { is_ai = yes}
+					change_variable = {
+						which = "force_limit" 
+						value = 1
+					}
+				}	
 			}
 		}
 		every_army_within_country = {
@@ -147,7 +168,7 @@ country_event = {
 			root = {
 				change_variable = {
 					which = "force_limit" 
-					value = -5
+					value = -4
 				}
 			}
 		}

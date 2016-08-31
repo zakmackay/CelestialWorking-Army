@@ -1,0 +1,167 @@
+# Grants additional fortification strength to planets
+building_fort_1 = {
+	icon = "building_primitive_farm"
+	base_buildtime = 360	
+	planet_unique = yes
+	
+	cost = {
+		minerals = 150
+	}
+	upgrades = {
+		building_fort_2
+	}
+
+	planet_modifier = {
+		planet_fortification_strength = 0.5
+	}	
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	prerequisites = {
+		"tech_fort_1"
+	}
+
+	potential = {
+		planet = {
+			not = {
+				or = {
+					has_building = "building_fort_2"
+					has_building = "building_fort_3"
+				}
+			}
+		}
+	}
+	ai_special_building = yes
+
+	ai_allow = {
+		has_any_resource = no
+	}
+	
+	ai_weight = {
+		factor = 2000
+		modifier = {
+			factor = 0		
+			from = {
+				NOT = {
+					or = {
+						has_planet_flag = "celarmy_fort" 
+						has_planet_flag = "man_celarmy_fort"
+					}
+				}
+			}
+		}
+	}
+}
+
+# Grants additional fortification strength to planets
+building_fort_2 = {
+	is_listed = no
+	icon = "building_primitive_factory"
+	base_buildtime = 360	
+	planet_unique = yes
+	upgrades = {
+		building_fort_3
+	}
+	cost = {
+		minerals = 300
+	}
+	
+	planet_modifier = {
+		planet_fortification_strength = 1
+	}	
+	prerequisites = {
+		"tech_fort_2"
+	}
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	ai_special_building = yes
+
+	ai_allow = {
+		has_any_resource = no
+	}
+	
+	ai_weight = {
+		factor = 1000
+		modifier = {
+			factor = 0		
+			from = {
+				NOT = {
+					or = {
+						has_planet_flag = "celarmy_fort" 
+						has_planet_flag = "man_celarmy_fort"
+					}
+				}
+			}
+		}
+	}
+}
+
+# Grants additional fortification strength to planets
+building_fort_3 = {
+	is_listed = no
+	icon = "building_ministry_benevolence"
+	base_buildtime = 360	
+	planet_unique = yes
+	
+	cost = {
+		minerals = 450
+	}
+	
+	planet_modifier = {
+		planet_fortification_strength = 1.5
+	}	
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	ai_special_building = yes
+	prerequisites = {
+		"tech_fort_3"
+	}
+	ai_allow = {
+		has_any_resource = no
+	}
+	
+	ai_weight = {
+		factor = 1000
+		modifier = {
+			factor = 0		
+			from = {
+				NOT = {
+					or = {
+						has_planet_flag = "celarmy_fort" 
+						has_planet_flag = "man_celarmy_fort"
+					}
+				}
+			}
+		}
+	}
+}

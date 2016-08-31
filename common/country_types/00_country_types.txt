@@ -182,22 +182,6 @@ default = {
 							has_ai_personality_behaviour = robot_exploiter
 							has_technology = tech_droid_workers
 						}
-						not = {
-							OR = {
-								AND ={
-									has_technology = tech_cloning
-									any_owned_planet = {
-										has_building = "building_clone_vats"
-									}
-								}
-								has_technology = tech_telepathy
-								has_technology = tech_gene_seed_purification
-								AND = {
-									has_ai_personality_behaviour = slaver
-									has_technology = tech_neural_implants
-								}
-							}
-						}
 					}
 					modifier = {
 						factor = 0
@@ -214,6 +198,16 @@ default = {
 								has_ai_personality_behaviour = slaver
 								has_technology = tech_neural_implants
 							}
+							AND = {
+								exists = ruler
+								ruler = { 
+									not = { has_leader_flag = has_elite_guard }
+								}
+								OR = {
+									has_government = despotic_hegemony
+									has_government = ai_overlordship
+								}
+							}
 						}
 					}
 					modifier = {
@@ -227,6 +221,7 @@ default = {
 					}
 					modifier = {
 						factor = 0
+						has_technology = tech_xeno_integration
 						check_variable = {
 							which = "foreign_count" 
 							value > 0
@@ -255,6 +250,16 @@ default = {
 							}
 							has_technology = tech_telepathy
 							has_technology = tech_gene_seed_purification
+							AND = {
+								exists = ruler
+								ruler = { 
+									not = { has_leader_flag = has_elite_guard }
+								}
+								OR = {
+									has_government = despotic_hegemony
+									has_government = ai_overlordship
+								}
+							}
 						}
 					}
 					modifier = {
@@ -268,6 +273,7 @@ default = {
 					}
 					modifier = {
 						factor = 0
+						has_technology = tech_xeno_integration
 						check_variable = {
 							which = "foreign_count" 
 							value > 0
@@ -301,6 +307,16 @@ default = {
 								has_ai_personality_behaviour = slaver
 								has_technology = tech_neural_implants
 							}
+							AND = {
+								exists = ruler
+								ruler = { 
+									not = { has_leader_flag = has_elite_guard }
+								}
+								OR = {
+									has_government = despotic_hegemony
+									has_government = ai_overlordship
+								}
+							}
 						}
 					}
 					modifier = {
@@ -314,6 +330,7 @@ default = {
 					}
 					modifier = {
 						factor = 0
+						has_technology = tech_xeno_integration
 						check_variable = {
 							which = "foreign_count" 
 							value > 0
@@ -338,6 +355,16 @@ default = {
 							}
 							has_technology = tech_telepathy
 							has_technology = tech_gene_seed_purification
+							AND = {
+								exists = ruler
+								ruler = { 
+									not = { has_leader_flag = has_elite_guard }
+								}
+								OR = {
+									has_government = despotic_hegemony
+									has_government = ai_overlordship
+								}
+							}
 						}
 					}
 					modifier = {
@@ -351,6 +378,7 @@ default = {
 					}
 					modifier = {
 						factor = 0
+						has_technology = tech_xeno_integration
 						check_variable = {
 							which = "foreign_count" 
 							value > 0
@@ -359,7 +387,7 @@ default = {
 				}
 			}
 			
-			psionic_army = {			
+			psionic_army = {	
 				fraction = {
 					factor = 50
 					modifier = {
@@ -373,6 +401,16 @@ default = {
 								has_technology = tech_telepathy
 							}
 							has_technology = tech_gene_seed_purification
+							AND = {
+								exists = ruler
+								ruler = { 
+									not = { has_leader_flag = has_elite_guard }
+								}
+								OR = {
+									has_government = despotic_hegemony
+									has_government = ai_overlordship
+								}
+							}
 						}
 					}
 					modifier = {
@@ -386,6 +424,7 @@ default = {
 					}
 					modifier = {
 						factor = 0
+						has_technology = tech_xeno_integration
 						check_variable = {
 							which = "foreign_count" 
 							value > 0
@@ -402,6 +441,16 @@ default = {
 							NOT = {
 								has_technology = tech_gene_seed_purification
 							}
+							AND = {
+								exists = ruler
+								ruler = { 
+									not = { has_leader_flag = has_elite_guard }
+								}
+								OR = {
+									has_government = despotic_hegemony
+									has_government = ai_overlordship
+								}
+							}
 						}
 					}
 					modifier = {
@@ -415,6 +464,7 @@ default = {
 					}
 					modifier = {
 						factor = 0
+						has_technology = tech_xeno_integration
 						check_variable = {
 							which = "foreign_count" 
 							value > 0
@@ -436,7 +486,16 @@ default = {
 								has_technology = tech_morphogenetic_field_mastery
 							}
 							has_technology = tech_gene_seed_purification
-							
+							AND = {
+								exists = ruler
+								ruler = { 
+									not = { has_leader_flag = has_elite_guard }
+								}
+								OR = {
+									has_government = despotic_hegemony
+									has_government = ai_overlordship
+								}
+							}
 						}
 					}
 					modifier = {
@@ -450,6 +509,7 @@ default = {
 					}
 					modifier = {
 						factor = 0
+						has_technology = tech_xeno_integration
 						check_variable = {
 							which = "foreign_count" 
 							value > 0
@@ -476,6 +536,47 @@ default = {
 							check_variable = {
 								which = "force_limit" 
 								value > 0
+							}
+						}
+					}
+					modifier = {
+						factor = 0
+						not = {
+							has_technology = tech_xeno_integration
+						}
+					}
+					modifier = {
+						factor = 0
+						OR = {
+							AND = {
+								exists = ruler
+								ruler = { 
+									not = { has_leader_flag = has_elite_guard }
+								}
+								OR = {
+									has_government = despotic_hegemony
+									has_government = ai_overlordship
+								}
+							}
+						}
+					}
+				}
+			}
+			elite_guard_army = {
+				fraction = {
+					factor = 50
+					modifier = {
+						factor = 0
+						not = {
+							AND = {
+								exists = ruler
+								ruler = { 
+									not = { has_leader_flag = has_elite_guard }
+								}
+								OR = {
+									has_government = despotic_hegemony
+									has_government = ai_overlordship
+								}
 							}
 						}
 					}

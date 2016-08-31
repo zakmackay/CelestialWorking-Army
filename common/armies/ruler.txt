@@ -1,0 +1,74 @@
+# Elite Guard Armies
+elite_guard_army = {
+	damage = 1.75
+	health = 1.5
+	morale = 1.5
+	morale_damage = 0.8
+	assault = yes
+	time = 115
+	maintenance = 0.4
+	icon_frame = 2
+	cost = {
+		minerals = 115
+		energy = 15
+	}
+
+	built_for_ruler = yes
+
+	potential = {
+		custom_tooltip = {
+			text = out_force_limit
+			owner = {
+				check_variable = {
+					which = "force_limit" 
+					value > 0
+				}
+			}
+		}
+		owner = {
+			OR = {
+				has_government = despotic_hegemony
+				has_government = ai_overlordship
+			}
+			exists = ruler
+			ruler = {
+				NOT = { has_leader_flag = has_elite_guard }
+			}
+		}
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = elite_guard_army_trigger_tooltip
+			owner = {
+				exists = ruler
+				ruler = {
+					NOT = { has_leader_flag = has_elite_guard }
+				}
+			}
+		}
+	}
+	on_queued = {
+		owner = {
+			ruler = {
+				set_leader_flag = has_elite_guard
+			}
+			change_variable = {
+				which = "force_limit" 
+				value = -4
+			}
+		}
+	}
+	
+	on_unqueued = {
+		owner = {
+			ruler = {
+				remove_leader_flag = has_elite_guard
+			}
+			change_variable = {
+				which = "force_limit" 
+				value = 4
+			}
+		}
+	}
+}

@@ -14,3 +14,46 @@ defense_army = {
 	
 	prerequisites = { "tech_defense_army" }
 }
+
+# Defense Armies
+fort_1_army = {
+	robotic = yes
+	defensive = yes
+	health = 4
+	damage = 3
+	icon_frame = 1
+	maintenance = 0.2 #this is to make the AI smarter
+	has_species = no
+
+	potential= {
+		always = no
+	}
+}
+
+fort_2_army = {
+	robotic = yes
+	defensive = yes
+	health = 4.5
+	damage = 6
+	icon_frame = 1
+	maintenance = 0.3  #this is to make the AI smarter
+	has_species = no
+
+	potential= {
+		always = no
+	}
+}
+
+fort_3_army = {
+	robotic = yes
+	defensive = yes
+	health = 5
+	damage = 9
+	icon_frame = 1
+	maintenance = 0.4  #this is to make the AI smarter
+	has_species = no
+
+	potential= {
+		always = no
+	}
+}

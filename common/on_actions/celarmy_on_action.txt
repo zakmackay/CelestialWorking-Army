@@ -2,6 +2,48 @@
 on_yearly_pulse = {
 	events = {
 		force.1
+		fort.0
+	}
+}
+
+# Triggered when two empires discover each other
+on_first_contact = {
+	events = {
+		fort.2
+	}
+}
+
+# A planet has been colonized.
+# Scope = Planet
+on_colonized = {
+	events = {
+		fort.1
+	}
+}
+
+# A war has ended
+# Root = Loser
+# From = Main Winner
+on_war_ended = {
+	events = {
+		fort.2
+		force.7
+	}
+}
+
+# Executes after a policy has been changed
+# use last_changed_policy to identify which policy it was
+# This = Country
+on_policy_changed = {
+	events = {
+		fort.100
+	}
+}
+
+# Scope = Planet
+on_colony_destroyed = {
+	events = {
+		force.1
 	}
 }
 
@@ -10,6 +52,10 @@ on_yearly_pulse = {
 on_press_begin = {
 	events = {
 		force.1
+		fort.10
+		fort.11
+		fort.12
+		fort.13
 	}
 }
 # Triggers country_event for the attacker upon victory
@@ -19,6 +65,10 @@ on_press_begin = {
 on_planet_attackers_win = {
 	events = {
 		force.2
+		fort.10
+		fort.11
+		fort.12
+		fort.13
 	}
 }
 
@@ -29,6 +79,10 @@ on_planet_attackers_win = {
 on_planet_attackers_lose = {
 	events = {
 		force.2
+		fort.10
+		fort.11
+		fort.12
+		fort.13
 	}
 }
 
@@ -39,6 +93,10 @@ on_planet_attackers_lose = {
 on_planet_defenders_win = {
 	events = {
 		force.2
+		fort.10
+		fort.11
+		fort.12
+		fort.13
 	}
 }
 
@@ -83,5 +141,54 @@ on_pop_migration_end = {
 on_pop_birth = {
 	events = {
 		force.6
+	}
+}
+
+
+#A building construction has been completed.
+# This = Planet
+# From = Tile
+on_building_complete = {
+	events = {
+		fort.10
+		fort.11
+		fort.12
+		fort.13
+	}
+}
+
+# A building construction has been completed, which is an upgrade of previous building.
+# This = Planet
+# From = Tile
+on_building_upgraded = {
+	events = {
+		fort.10
+		fort.11
+		fort.12
+		fort.13
+	}	
+}
+
+# A building construction has demolished.
+# This = Planet
+# From = Tile
+on_building_demolished = {
+	events = {
+		fort.10
+		fort.11
+		fort.12
+		fort.13
+	}
+}
+
+# A building construction has finished, replacing another building.
+# This = Planet
+# From = Tile
+on_building_replaced = {
+	events = {
+		fort.10
+		fort.11
+		fort.12
+		fort.13
 	}
 }

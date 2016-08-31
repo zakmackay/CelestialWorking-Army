@@ -9,14 +9,19 @@
  foreign_army:0 "Foreign Army"
  foreign_army_plural:0 "Foreign Armies"
  foreign_army_desc:0 "Foreign armies draw there recruits mostly from allied nations, refugees and ex-mercenaries looking for a better life. This diverse cast makes them masters of all-terrain, multiple tactics, robots, xenos, as well as veterans of many conflicts."
+ 
+ fort_1_army:0 "Level 1 Fort"
+ fort_1_army_plural:0 "Level 1 Forts"
+
+ fort_2_army:0 "Level 2 Fort"
+ fort_2_army_plural:0 "Level 2 Forts"
+ 
+ fort_3_army:0 "Level 3 Fort"
+ fort_3_army_plural:0 "Level 3 Forts"
+ 
  triggered_telepathy:0 "PSI Warriors"
  triggered_telepathy_desc:0 "These elite warriors are shrouded in mystery, relying on their powerful psionic abilities and extensive physical training to move about the battlefield. They prefer to engage their opponents in close combat, and many are extremely proficient with melee weapons."
- 
- building_ruler_library:0 "Ruler Library"
- building_ruler_library_desc:0 "A huge library built to honor are great ruler."
- building_grand_mausoleum_proper:0 "[GetRulerName]'s Library"
- building_grand_mausoleum_desc_proper:0 "A huge library built to honor [GetRulerName]."
- 
+
  triggered_commissar:0 "Commissar Squads"
  triggered_commissar_desc:0 "Enforcing discipline in an army of slaves is monumental task, but these squads of hardened commissars have turned it into an art. Decimation and other harsh disciplinary actions are used to ensure the slaves fear the ire of the commissars more than the enemy."
 
@@ -25,3 +30,46 @@
 
  triggered_gene_bank:0 "Clone Commandos"
  triggered_gene_bank_desc:0 "These vat-grown killers are expensive to produce, but the extreme conditioning and training they are subjected to turn them into very capable soldiers. They are more independent-minded than normal clones, and some models have been known to develop eccentric quirks."
+
+ policy_fortification:0 "Fortification Policy"
+ policy_fortification_desc:0 "This sets which worlds you wish for your sectors to build forts in. You can always manually set a world to be fortified via planatery edict. This is mostly used to determine AI logic."
+
+ no_fort_name:0 "No Forts"
+ no_fortifications:0 "No Forts"
+ no_fortifications_desc:0 "No forts will be constructed"
+  
+ border_fort_name:0 "Border Forts"
+ border_fortification:0 "Border Forts"
+ border_fortification_desc:0 "Forts will be build around your boarder provinces."
+ 
+ sector_fort_name:0 "Sector Forts"
+ sector_fortification:0 "Sector Forts"
+ sector_fortification_desc:0 "Forts will be build inside all worlds controled by sectors."
+ 
+ all_fort_name:0 "Forts on Every World"
+ all_worlds:0 "Forts on Every World"
+ all_worlds_desc:0 "Forts will be build on every world."
+ 
+ manually_fortify:0 "Fortify this world"
+ manually_fortify_desc:0 "This will tell the sector to build a fort here."
+ 
+ stop_manually_fortify:0 "Stop fortifying this world"
+ stop_manually_fortify:0 "Stop building forts here."
+ 
+ building_fort_1:0 "Fort"
+ building_fort_1_desc:0 "A small fortification designed to stop rebellions and pirates."
+ tech_fort_1:0 "Fort"
+ tech_fort_1_desc:0 "A small fortification designed to stop rebellions and pirates."
+ 
+ building_fort_2:0 "Bastion"
+ building_fort_2_desc:0 "A large fort designed to protect the world."
+ 
+ building_fort_3:0 "Citidal"
+ building_fort_3_desc:0 "A powerful fort. It will take considerable effort to take this world."
+ 
+ 
+ tech_fort_2:0 "Bastion"
+ tech_fort_2_desc:0 "A large fort designed to protect the world."
+ 
+ tech_fort_3:0 "Citidal"
+ tech_fort_3_desc:0 "A powerful fort. It will take considerable effort to take this world."
