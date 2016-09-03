@@ -52,10 +52,7 @@ on_colony_destroyed = {
 on_press_begin = {
 	events = {
 		force.1
-		fort.10
-		fort.11
-		fort.12
-		fort.13
+		fort.0
 	}
 }
 # Triggers country_event for the attacker upon victory

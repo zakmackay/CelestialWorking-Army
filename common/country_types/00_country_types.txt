@@ -186,68 +186,6 @@ default = {
 					modifier = {
 						factor = 0
 						OR = {
-							AND ={
-								has_technology = tech_cloning
-								any_owned_planet = {
-									has_building = "building_clone_vats"
-								}
-							}
-							has_technology = tech_telepathy
-							has_technology = tech_gene_seed_purification
-							AND = {
-								has_ai_personality_behaviour = slaver
-								has_technology = tech_neural_implants
-							}
-							AND = {
-								exists = ruler
-								ruler = { 
-									not = { has_leader_flag = has_elite_guard }
-								}
-								OR = {
-									has_government = despotic_hegemony
-									has_government = ai_overlordship
-								}
-							}
-						}
-					}
-					modifier = {
-						factor = 0
-						not = {
-							check_variable = {
-								which = "force_limit" 
-								value > 0
-							}
-						}
-					}
-					modifier = {
-						factor = 0
-						has_technology = tech_xeno_integration
-						check_variable = {
-							which = "foreign_count" 
-							value > 0
-						}
-					}
-				}
-			}
-			slave_army = {
-				fraction = {
-					factor = 50
-					modifier = {
-						factor = 0
-						NOT = {
-							has_ai_personality_behaviour = slaver
-							has_technology = tech_neural_implants
-						}
-					}
-					modifier = {
-						factor = 0
-						OR = {
-							AND ={
-								has_technology = tech_cloning
-								any_owned_planet = {
-									has_building = "building_clone_vats"
-								}
-							}
 							has_technology = tech_telepathy
 							has_technology = tech_gene_seed_purification
 							AND = {
@@ -281,7 +219,6 @@ default = {
 					}
 				}
 			}
-			
 			robotic_army = {
 				fraction = {
 					factor = 25
@@ -295,64 +232,6 @@ default = {
 					modifier = {
 						factor = 0
 						OR = {
-							AND ={
-								has_technology = tech_cloning
-								any_owned_planet = {
-									has_building = "building_clone_vats"
-								}
-							}
-							has_technology = tech_telepathy
-							has_technology = tech_gene_seed_purification
-							AND = {
-								has_ai_personality_behaviour = slaver
-								has_technology = tech_neural_implants
-							}
-							AND = {
-								exists = ruler
-								ruler = { 
-									not = { has_leader_flag = has_elite_guard }
-								}
-								OR = {
-									has_government = despotic_hegemony
-									has_government = ai_overlordship
-								}
-							}
-						}
-					}
-					modifier = {
-						factor = 0
-						not = {
-							check_variable = {
-								which = "force_limit" 
-								value > 0
-							}
-						}
-					}
-					modifier = {
-						factor = 0
-						has_technology = tech_xeno_integration
-						check_variable = {
-							which = "foreign_count" 
-							value > 0
-						}
-					}
-				}
-			}
-			
-			clone_army = {
-				fraction = {
-					factor = 50
-					modifier = {
-						factor = 0
-						OR = {
-							NOT = {
-								has_technology = tech_cloning
-							}
-							not = {
-								any_owned_planet = {
-									has_building = "building_clone_vats"
-								}
-							}
 							has_technology = tech_telepathy
 							has_technology = tech_gene_seed_purification
 							AND = {
@@ -386,12 +265,17 @@ default = {
 					}
 				}
 			}
-			
 			psionic_army = {	
 				fraction = {
 					factor = 50
 					modifier = {
-						add = -25
+						factor = 0
+						not = {
+							or = {
+								has_ethic = ethic_spiritualist
+								has_ethic = ethic_fanatic_spiritualist
+							}
+						}
 						has_technology = tech_morphogenetic_field_mastery
 					}
 					modifier = {
@@ -476,8 +360,12 @@ default = {
 				fraction = {
 					factor = 50
 					modifier = {
-						add = -25
+						factor = 0
 						has_technology = tech_telepathy
+						or = {
+							has_ethic = ethic_spiritualist
+							has_ethic = ethic_fanatic_spiritualist
+						}
 					}
 					modifier = {
 						factor = 0

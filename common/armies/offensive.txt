@@ -57,7 +57,9 @@ slave_army = {
 	}
 	
 	prerequisites = { "tech_neural_implants" }
-	
+	potential = {
+		always = no
+	}
 	allow = {
 		has_building = "building_slave_processing"
 		custom_tooltip = {
@@ -107,7 +109,10 @@ clone_army = {
 		minerals = 60
 		energy = 10
 	}
-	
+	potential = {
+		always = no
+	}	
+
 	prerequisites = { "tech_cloning" }
 	
 	allow = {

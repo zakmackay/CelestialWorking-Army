@@ -73,3 +73,33 @@
  
  tech_fort_3:0 "Citidal"
  tech_fort_3_desc:0 "A powerful fort. It will take considerable effort to take this world."
+ 
+ policy_fortification:0 "Fortification Policy"
+ policy_fortification_desc:0 "This sets which worlds you wish for your sectors to build forts in. You can always manually set a world to be fortified via planatery edict. This is mostly used to determine AI logic."
+
+ Slave_integration:0 "Slave Integration"
+ Slave_integration_desc:0 "Slave soldiers represents a cheaper method "
+ 
+ no_slave_army:0 "No Slave Soldiers"
+ no_slave_army_desc:0 "Your armies are compried entirly of freemen."
+ 
+ low_slave_army:0 "Low Slave Soldiers"
+ low_slave_army_desc:0 "Slaves take over most non combat roles inside your fores."
+ 
+ med_slave_army:0 "Medium Slave Soldiers"
+ med_slave_army_desc:0 "Slaves divisions are mixed in with normal divisions. Though not the most reliable of soldiers they are cheap."
+ 
+ high_slave_army:0 "High Slave Soldiers"
+ high_slave_army_desc:0 "Almost the entire army is comprised of slaves. The role of freemen are just to keep them in check."
+ no_fortifications:0 "No Forts"
+ no_fortifications_desc:0 "No forts will be constructed"
+  
+
+ no_clone_army:0 "No Clone Soldiers"
+ no_clone_army_desc:0 "The entire forces are comprised of naturally born soldiers."
+ 
+ med_clone_army:0 "Low clone soldiers"
+ med_clone_army_desc:0 "Vat grown soldiers make excelent front line troops however we cannot justify there cost."
+ 
+ high_clone_army:0 "Low clone soldiers"
+ high_clone_army_desc:0 "Almost the entire army is comprised of slaves. The role of freemen are just to keep them in check."

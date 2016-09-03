@@ -9,8 +9,7 @@ elite_guard_army = {
 	maintenance = 0.4
 	icon_frame = 2
 	cost = {
-		minerals = 115
-		energy = 15
+		minerals = 80
 	}
 
 	built_for_ruler = yes

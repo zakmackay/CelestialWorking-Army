@@ -29,12 +29,12 @@ psionic_army = {
 	morale_damage = 2
 	health = 1.25
 	morale = 1.5
-	time = 360
+	time = 180
 	maintenance = 0.4
 	icon_frame = 9
 	
 	cost = {
-		minerals = 80
+		minerals = 60
 		energy = 50
 	}
 	
@@ -84,7 +84,7 @@ xenomorph_army = {
 	has_species = no
 
 	cost = {
-		minerals = 130
+		minerals = 100
 		energy = 30
 	}
 	
@@ -133,8 +133,8 @@ gene_warrior_army = {
 	icon_frame = 6
 
 	cost = {
-		minerals = 200
-		energy = 50
+		minerals = 150
+		energy = 100
 	}
 	
 	prerequisites = { "tech_gene_seed_purification" }

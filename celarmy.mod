@@ -6,5 +6,6 @@ tags={
 	"Military"
 	"Overhaul"
 }
-picture = "celestialworkings-armies-icon.jpg"
+picture="celestialworkings-armies-icon.jpg"
+remote_file_id="753420910"
 supported_version="1.2.5"
